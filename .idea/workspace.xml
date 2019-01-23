@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3a3a07cc-4589-49dc-a363-7cf5caa42b1a" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="1895379103">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="8" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.1" value="6" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.opened" value="8" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="class" value="2" />
+          <entry key="java" value="6" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CLASS" value="2" />
+          <entry key="JAVA" value="6" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="4351" />
+          <entry key="xml" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="4351" />
+          <entry key="XML" value="3" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/pageObject/LetsBuyPorscheTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-777">
+              <caret line="122" column="38" selection-start-line="122" selection-start-column="38" selection-end-line="122" selection-end-column="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/pages/PorscheConfigurator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="593">
+              <caret line="65" column="52" selection-start-line="65" selection-start-column="52" selection-end-line="65" selection-end-column="52" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/pages/Cayman718SPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="18" column="39" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/utilities/TestBase.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="672">
+              <caret line="42" selection-start-line="42" selection-end-line="42" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/utilities/Driver.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>public void porscheMainPage\(\) throws InterruptedException \{\n\n        \/\/2\.Go to url \“https\:\/\/www\.porsche\.com\/usa\/modelstart\/\”\n        Driver\.gertDriver\(\)\.get\(\&quot;https\:\/\/www\.porsche\.com\/usa\/modelstart\/\&quot;\)\;\n\n        \/\/3\. Select model 718\n        PorscheMainPage pmp \= new PorscheMainPage\(\)\;\n        pmp\.porsche718Btn\.click\(\)\;\n\n        \/\/4\.Remember the price of 718 Cayman Model S\n        Thread\.sleep\(2000\)\;\n        Cayman718SPage price718 \= new Cayman718SPage\(\)\;\n        Assert\.assertTrue\(price718\.caymanPriceBeforeClick\.isEnabled\(\)\)\;\n        String pricefirstStr \= price718\.caymanPriceBeforeClick\.getAttribute\(\&quot;innerText\&quot;\)\.substring\(7\, 13\)\;\n        System\.out\.println\(pricefirstStr\)\;\n\n        \/\/5\.Click on 718 Cayman S\n        String parentWindHandle \= Driver\.gertDriver\(\)\.getWindowHandle\(\)\;\n        price718\.caymanPriceBeforeClick\.click\(\)\;\n\n        \/\/Verify that Base price displayed on the page is same as the price from step 4\n\n        Set\&lt;String\&gt; winHandles \= Driver\.gertDriver\(\)\.getWindowHandles\(\)\;\n        for \(String handle \: winHandles\) \{\n            if \(\!handle\.equals\(parentWindHandle\)\) \{\n                Driver\.gertDriver\(\)\.switchTo\(\)\.window\(handle\)\;\n                Thread\.sleep\(3000\)\;\n            \}\n\n        \}\n            PorscheConfigurator confPage \= new PorscheConfigurator\(\)\;\n            String pricesecondStr \= confPage\.caymanPriceAfterClick\.getAttribute\(\&quot;innerText\&quot;\)\.substring\(1\)\;\n            System\.out\.println\(pricesecondStr\)\;\n            Assert\.assertEquals\(pricefirstStr\, pricesecondStr\)\;\n            \n            \n            \/\/7\.Verify that Price for Equipment is 0 \n\n\n\n    \}</find>
+    </findStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/PorscheMainPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/utilities/Driver.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/Cayman718SPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/utilities/TestBase.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/PorscheConfigurator.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pageObject/LetsBuyPorscheTest.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-15" />
+    <option name="y" value="-15" />
+    <option name="width" value="3875" />
+    <option name="height" value="2095" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Porsche" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Porsche" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Porsche" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Porsche" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Porsche" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Porsche" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Porsche" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Porsche" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Porsche" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Porsche" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Porsche" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Porsche" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Porsche" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Porsche" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="utilities" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547445424269" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="utilities" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="TestNG.LetsBuyPorscheTest">
+    <configuration name="LetsBuyPorscheTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Porsche" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pageObject.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pageObject" />
+      <option name="MAIN_CLASS_NAME" value="pageObject.LetsBuyPorscheTest" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LetsBuyPorscheTest.porscheMainPage" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Porsche" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pageObject.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pageObject" />
+      <option name="MAIN_CLASS_NAME" value="pageObject.LetsBuyPorscheTest" />
+      <option name="METHOD_NAME" value="porscheMainPage" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="TestNG.LetsBuyPorscheTest" />
+      <item itemvalue="TestNG.LetsBuyPorscheTest.porscheMainPage" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.LetsBuyPorscheTest" />
+        <item itemvalue="TestNG.LetsBuyPorscheTest.porscheMainPage" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3a3a07cc-4589-49dc-a363-7cf5caa42b1a" name="Default Changelist" comment="" />
+      <created>1547313661584</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1547313661584</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="LetsBuyPorscheTest - 2019.01.14 at 00h 29m 21s.xml">
+      <configuration name="LetsBuyPorscheTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="LetsBuyPorscheTest - 2019.01.14 at 00h 31m 45s.xml">
+      <configuration name="LetsBuyPorscheTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="LetsBuyPorscheTest - 2019.01.14 at 00h 34m 05s.xml">
+      <configuration name="LetsBuyPorscheTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="LetsBuyPorscheTest - 2019.01.14 at 00h 41m 16s.xml">
+      <configuration name="LetsBuyPorscheTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="LetsBuyPorscheTest - 2019.01.14 at 00h 43m 06s.xml">
+      <configuration name="LetsBuyPorscheTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="LetsBuyPorscheTest - 2019.01.14 at 00h 47m 46s.xml">
+      <configuration name="LetsBuyPorscheTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="LetsBuyPorscheTest - 2019.01.14 at 00h 52m 07s.xml">
+      <configuration name="LetsBuyPorscheTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="LetsBuyPorscheTest - 2019.01.14 at 00h 53m 18s.xml">
+      <configuration name="LetsBuyPorscheTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="LetsBuyPorscheTest - 2019.01.14 at 00h 56m 45s.xml">
+      <configuration name="LetsBuyPorscheTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="LetsBuyPorscheTest - 2019.01.14 at 00h 57m 43s.xml">
+      <configuration name="LetsBuyPorscheTest" configurationId="TestNG" />
+    </history-entry>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-6" y="-6" width="1549" height="837" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17035547" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.329429" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.329429" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Maven Projects" order="7" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1407">
+          <caret line="67" selection-start-line="67" selection-end-line="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/PorscheMainPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#333#334#0" expanded="true" />
+            <element signature="e#400#401#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/SuiteRunnerWorker.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/utilities/TestBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/utilities/Driver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/Cayman718SPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="18" column="39" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/PorscheConfigurator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="593">
+          <caret line="65" column="52" selection-start-line="65" selection-start-column="52" selection-end-line="65" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pageObject/LetsBuyPorscheTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-777">
+          <caret line="122" column="38" selection-start-line="122" selection-start-column="38" selection-end-line="122" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
