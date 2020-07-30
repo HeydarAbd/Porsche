@@ -13,10 +13,4 @@ public class Cayman718SPage {
 
     @FindBy(xpath = "//div[@id='model-result-row']/div[3]/div[2]/div[1]/div[2]/div[@class='m-14-model-price']")
     public static WebElement caymanBasePriceBeforeClick;
-
-
-
-
-
-
 }
